@@ -1,0 +1,51 @@
+@use 'variables';
+
+@mixin button-style(
+	$bg-color: variables.$color-btn-primary,
+	$text-color: variables.$color-btn-text-primary,
+	$border: none,
+	$hover-bg: null,
+	$hover-text: null,
+	$shadow-on-hover: true
+) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	background: $bg-color;
+	color: $text-color;
+	border: $border;
+	
+	font-family: variables.$font-family;
+	font-weight: 600;
+	font-size: 0.95rem;
+	
+	border-radius: 50px;
+	padding: 0.6rem 1.5rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	
+	&:hover {
+		background: if($hover-bg != null, $hover-bg, $bg-color);
+		color: if($hover-text != null, $hover-text, $text-color);
+		transform: translateY(-2px);
+		@if $shadow-on-hover {
+			box-shadow: variables.$shadow-btn;
+		}
+	}
+}
+
+.btn-primary {
+	@include button-style;
+}
+
+.btn-outline {
+	@include button-style(
+		$bg-color: transparrent,
+		$text-color: variables.$color-btn-primary,
+		$border: 2px solid variables.$color-btn-border,
+		$hover-bg: variables.$color-white,
+		$hover-text: variables.$color-bg-primary,
+		$shadow-on-hover: false
+	);
+}

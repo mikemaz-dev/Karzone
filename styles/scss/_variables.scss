@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--color-bg-primary: #111111;
+	
+	--color-white: #fefefe;
+	
+	--color-text-primary: #fefefe;
+	--color-text-secondary: #c7c7c9;
+	
+	--color-accent-gold: #e7dfa0;
+	--color-accent-gold-muted: #44492b;
+	
+	--color-btn-primary: #fff621;
+	--color-btn-text-primary: #201e02;
+	--color-btn-text-accent: #bfbd2f;
+	
+	--color-btn-border: #8f8f8f;
+	--color-border-primary: #939094;
+	--color-border-secondary: #5b5b5b;
+	
+	--shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
+	--shadow-header: 0 0 0 0.3rem rgba(0, 0, 0, 0.4);
+	--shadow-btn: 0 4px 12px rgba(255, 246, 33, 0.45);
+	
+	--color-success: #28a745;
+	--color-error: #e74c3c;
+	--color-warning: #f0ad4e;
+}
+
+$font-family: Montserrat, sans-serif;
+
+$color-bg-primary: var(--color-bg-primary);
+$color-white: var(--color-white);
+
+$color-text-primary: var(--color-text-primary);
+$color-text-secondary: var(--color-text-secondary);
+
+$color-accent-gold: var(--color-accent-gold);
+$color-accent-gold-mutes: var(--color-accent-gold-muted);
+
+$color-btn-primary: var(--color-btn-primary);
+$color-btn-text-primary: var(--color-btn-text-primary);
+$color-btn-text-accent: var(--color-btn-text-accent);
+
+$shadow-header: var(--shadow-header);
+$shadow-btn: var(--shadow-btn);
+
+$color-border-primary: var(--color-border-primary);
+$color-border-secondary: var(--color-border-secondary);
+$color-btn-border: var(--color-btn-border);
+
+$color-success: var(--color-success);
+$color-error: var(--color-error);
+$color-warning: var(--color-warning);

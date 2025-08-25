@@ -1,0 +1,34 @@
+@use 'variables';
+
+body {
+	background-color: variables.$color-bg-primary;
+	color: variables.$color-text-primary;
+	height: 100vh;
+	font-family: variables.$font-family;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variant: normal;
+	
+	padding: 0.6rem 0.5rem;
+}
+
+.container {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+main {
+	background-image: url("/public/images/porsche/Porsche_911_Carrera.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+}
+
+@import 'header';
+@import 'ui';
+
