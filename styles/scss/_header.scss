@@ -16,12 +16,13 @@
 	padding: 0.6rem 1.5rem;
 	
 	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(10px);
 	border: 2px solid #222224;
 	box-shadow: variables.$shadow-header;
 	
-	z-index: 1000;
+	z-index: 60;
 	
-	.header__logo {
+	&__logo {
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;

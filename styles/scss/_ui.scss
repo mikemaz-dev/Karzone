@@ -1,51 +1,51 @@
 @use 'variables';
 
-@mixin button-style(
-	$bg-color: variables.$color-btn-primary,
-	$text-color: variables.$color-btn-text-primary,
-	$border: none,
-	$hover-bg: null,
-	$hover-text: null,
-	$shadow-on-hover: true
-) {
+.btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
-	background: $bg-color;
-	color: $text-color;
-	border: $border;
 	
 	font-family: variables.$font-family;
 	font-weight: 600;
 	font-size: 0.95rem;
 	
 	border-radius: 50px;
-	padding: 0.6rem 1.5rem;
+	padding: 0.5rem 1.2rem;
 	cursor: pointer;
 	transition: all 0.3s ease;
 	
+	&--primary {
+		background-color: variables.$color-btn-primary;
+		color: variables.$color-btn-text-primary;
+		}
+	
 	&:hover {
-		background: if($hover-bg != null, $hover-bg, $bg-color);
-		color: if($hover-text != null, $hover-text, $text-color);
 		transform: translateY(-2px);
-		@if $shadow-on-hover {
-			box-shadow: variables.$shadow-btn;
+		box-shadow: variables.$shadow-btn;
+	}
+	
+	&--full {
+		width: 100%;
+		justify-content: space-between;
+		padding: 2rem 4rem;
+		font-size: 1.5rem;
+		color: variables.$color-white;
+		font-weight: 400;
+		border: 1.8px solid variables.$color-border-transparent;
+		border-radius: 0 0 1rem 0;
+		border-bottom: none;
+		border-right: none;
+		
+		&:first-child {
+			border-bottom-left-radius: 1rem;
+			border-bottom-right-radius: 0;
+			border-left: none;
+		}
+		
+		&:hover {
+			box-shadow: none;
+			transform: none;
+			background-color: variables.$color-btn-hover-bg-transparent;
 		}
 	}
-}
-
-.btn-primary {
-	@include button-style;
-}
-
-.btn-outline {
-	@include button-style(
-		$bg-color: transparrent,
-		$text-color: variables.$color-btn-primary,
-		$border: 2px solid variables.$color-btn-border,
-		$hover-bg: variables.$color-white,
-		$hover-text: variables.$color-bg-primary,
-		$shadow-on-hover: false
-	);
 }

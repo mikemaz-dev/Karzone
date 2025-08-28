@@ -15,9 +15,12 @@
 	--color-btn-text-primary: #201e02;
 	--color-btn-text-accent: #bfbd2f;
 	
+	--color-btn-hover-bg-transparent: rgba(255, 255, 255, 0.1);
+	
 	--color-btn-border: #8f8f8f;
 	--color-border-primary: #939094;
 	--color-border-secondary: #5b5b5b;
+	--color-border-transparent: rgba(255, 255, 255, 0.5);
 	
 	--shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
 	--shadow-header: 0 0 0 0.3rem rgba(0, 0, 0, 0.4);
@@ -49,6 +52,8 @@ $shadow-btn: var(--shadow-btn);
 $color-border-primary: var(--color-border-primary);
 $color-border-secondary: var(--color-border-secondary);
 $color-btn-border: var(--color-btn-border);
+$color-border-transparent: var(--color-border-transparent);
+$color-btn-hover-bg-transparent: var(--color-btn-hover-bg-transparent);
 
 $color-success: var(--color-success);
 $color-error: var(--color-error);

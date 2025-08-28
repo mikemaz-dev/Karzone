@@ -1,0 +1,58 @@
+@use 'variables';
+
+.about {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 4rem;
+	
+	&__title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+		min-width: 11rem;
+		
+		hr {
+			min-width: 2.5rem;
+			color: variables.$color-accent-gold;
+		}
+		
+		span {
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
+	}
+	
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 5rem;
+		
+		p:first-child {
+			font-size: 3.5rem;
+			width: 82%;
+			font-weight: 500;
+			line-height: 1.1;
+		}
+		
+		&-info {
+			width: 100%;
+			display: flex;
+			gap: 1rem;
+			opacity: 0.5;
+			
+			hr {
+				width: 45%;
+				margin-top: 1rem;
+				opacity: 0.5;
+			}
+			
+			p {
+				font-weight: 300;
+				max-width: 31rem;
+			}
+		}
+	}
+}
